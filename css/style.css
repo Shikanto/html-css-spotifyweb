@@ -70,13 +70,16 @@
 .album-container{
     flex-grow: 1;
     background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
 
 }
 
 .nav-bot-left{
     flex-grow: 1;
     max-width: 400px;
-    background-color: darkcyan;
+    background-color: rgb(139, 0, 93);
 }
 
 .nav-bot-center{
@@ -89,4 +92,18 @@
     max-width: 400px;
     background-color: salmon;
 
+}
+
+.album-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    background-color: lightgray;
+    flex-grow: 1;
+}
+
+.card-album{
+    height: 200px;
+    width: calc(100% / 2 - 4px);
+    background-color: red;
 }
