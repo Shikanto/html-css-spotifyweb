@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shell{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-grow: 1;
+}
+
+.sidebar{
+    border:1px solid green;
+    width: 40px;
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.spotify-container{
+    border:1px solid blue;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.nav-bot-container{
+    border: 1px solid red;
+    width: 100%;
+    height: 80px;
+    flex-shrink: 0;
+}
