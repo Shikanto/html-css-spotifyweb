@@ -16,6 +16,8 @@
     width: 40px;
     flex-shrink: 0;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .spotify-container{
@@ -29,4 +31,22 @@
     width: 100%;
     height: 80px;
     flex-shrink: 0;
+}
+
+.icon-container{
+    border: 1px solid yellow;
+    flex-shrink: 0;
+    height: 70px;
+}
+
+.playlist-container{
+    border: 1px solid purple;
+    background-color: burlywood;
+    flex-grow: 1;
+}
+
+.user-container{
+    border: 1px solid brown;
+    flex-shrink: 0;
+    height: 40px;
 }
