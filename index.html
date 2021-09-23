@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>SpotifyWeb</title>
 </head>
@@ -11,13 +15,61 @@
     <main>
         <div class="shell">
             <div class="sidebar">
-                <div class="icon-container"></div>
-                <div class="playlist-container"></div>
-                <div class="user-container"></div>
+                <div class="icon-container">
+                    <div class="icon-text"> 
+                        <a class="flex-icon" href="#"><img class="icon-xs-spotify" src="img/logo-small.svg" alt="logo-small-spotify">
+                        <span class="display-xs-none">Spotify</span></a>
+                    </div>
+                    <div class="icon-text"> 
+                        <a class="flex-icon" href="#"><img class="icon-xs" src="img/home.svg" alt="home">
+                        <span class="display-xs-none">Home</span></a>
+                    </div>
+                    <div class="icon-text"> 
+                        <a class="flex-icon" href="#"><img class="icon-xs" src="img/search.svg" alt="search">
+                        <span class="display-xs-none">Cerca</span></a>
+                    </div>
+                    <div class="icon-text"> 
+                        <a class="flex-icon" href="#"><img class="icon-xs" src="img/libreria.svg" alt="library">
+                        <span class="display-xs-none">La tua libreria</span></a>
+                    </div>
+                </div>
+                <div class="playlist-container">
+                    <div class="display-xs-none">
+                        <h4>PLAYLIST</h4>
+                        <div class="new-playlist-container"><i class="fas fa-plus-square playlist-plus"></i> Crea Playlist
+                        </div>
+                    </div>
+                    <div class="playlist-list display-xs-none">
+                        <ul>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-container">
+                    <div class="icon-text"> 
+                        <a class="flex-icon" href="#"><img class="icon-download" src="img/download.svg" alt="download">
+                        <span class="display-xs-none icon-download-text">Installa app</span></a>
+                    </div>
+                    <hr class="display-xs-none">
+                    <div class="icon-text"> 
+                        <a class="flex-icon" href="#"><img class="icon-profile-user" src="img/profile.svg" alt="profile-user">
+                        <span class="display-xs-none icon-profile-user-text">John Doe</span></a>
+                    </div>
+                </div>
             </div>
-            <div class="spotify-container">
-                <div class="upgrade-container"></div>
-                <div class="nav-links"></div>
+            <div class="main-section-container">
+                <div class="upgrade-container">
+                   <a class="upgrade-btn" href="#">EFFETTUA L'UPGRADE</a> 
+                </div>
+                <div class="nav-links">
+                    
+                </div>
                 <div class="album-container">
                     <h1>Recently played</h1>
                     <div class="album-card-container">
@@ -27,7 +79,6 @@
                         <div class="card-album"></div>
                         <div class="card-album"></div>
                         <div class="card-album"></div>
-                        
                     </div>
                 </div>
             </div>
