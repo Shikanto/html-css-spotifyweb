@@ -104,6 +104,7 @@ body{
     padding: 10px 6px;
     list-style: none;
     text-align: center;
+    font-weight: bold;
 }
 
 .nav-links ul li a{
@@ -131,23 +132,49 @@ body{
     flex-direction: column;
     overflow: auto;
     background-color: #141922;
+    padding: 20px ;
 }
 
-.album-container h1{
+.album-container h2{
+    padding-bottom: 20px;
+}
+
+.album-container h2, .card-album h4{
     color: white;
+    
+}
+
+.card-album h4, .card-album h5{
+    padding:6px 0;
+}
+
+h5{
+    color: #878787;
 }
 
 .album-card-container{
     flex-wrap: wrap;
     gap: 4px;
     flex-grow: 1;
+    padding-bottom: 30px;
     
 }
 
 .card-album{
-    height: 200px;
     width: calc(100% / 2 - 4px);
-    background-color: red;
+    text-align: center;
+}
+
+.card-album-img, .card-artist-img{
+    width: 100%;
+}
+
+.card-artist-img{
+    border-radius: 50%;
+}
+
+.main-section-subtitle{
+    padding-bottom: 20px;
 }
 
 /*************  FINE MAIN SECTION ****************/
@@ -388,7 +415,6 @@ body{
 
     .nav-links ul li{
         padding: 10px;
-        font-weight: bold;
     }
 
     .nav-links ul li:first-child a::after{
@@ -456,7 +482,25 @@ body{
     .album-card-container{
         gap: 10px;
     }
-   
+    
+    .icon-xs{
+        max-width: 40px;
+    }
 
+    .icon-text{
+        font-size: 16px;
+    }
 
+    .sidebar{
+        width: 250px;
+    }
+        
+    .icon-download-text{
+        font-size: 16px;
+    }
+
+    .icon-download{
+        max-width: 20px;
+        
+    }
 }
