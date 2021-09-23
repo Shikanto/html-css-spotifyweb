@@ -100,13 +100,37 @@
                     <div class="nav-bot-song-title">Sinister</div>
                     <div class="nav-bot-song-subtitle">Brano nome</div>
                 </div>
-                <div>
+                <div class="nav-bot-left-icon">
                     <i class="far fa-heart"></i>
                     <i class="far fa-folder"></i>
                 </div>
             </div>
-            <div class="nav-bot-center"></div>
-            <div class="nav-bot-right"></div>
+            <div class="nav-bot-center flex">
+                <div class="flex icon-player-container">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i id="play-btn" class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+                <div class="flex song-bar-container">
+                    0:25 
+                    <div class="song-bar flex">
+                        <div class="song-bar-progress"></div>
+                        <div class="song-dot"></div>
+                    </div>
+                    4:35
+                </div>
+            </div>
+            <div class="nav-bot-right flex">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+                <div class="song-bar flex">
+                    <div class="song-bar-progress"></div>
+                    <div class="song-dot"></div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
