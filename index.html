@@ -13,9 +13,9 @@
 </head>
 <body>
     <main>
-        <div class="shell">
-            <div class="sidebar">
-                <div class="icon-container">
+        <div class="shell flex">
+            <div class="sidebar flex">
+                <div class="icon-container flex">
                     <div class="icon-text"> 
                         <a class="flex-icon" href="#"><img class="icon-xs-spotify" src="img/logo-small.svg" alt="logo-small-spotify">
                         <span class="display-xs-none">Spotify</span></a>
@@ -51,7 +51,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="user-container">
+                <div class="user-container flex">
                     <div class="icon-text"> 
                         <a class="flex-icon" href="#"><img class="icon-download" src="img/download.svg" alt="download">
                         <span class="display-xs-none icon-download-text">Installa app</span></a>
@@ -63,16 +63,24 @@
                     </div>
                 </div>
             </div>
-            <div class="main-section-container">
+            <div class="main-section-container flex">
                 <div class="upgrade-container">
                    <a class="upgrade-btn" href="#">EFFETTUA L'UPGRADE</a> 
                 </div>
                 <div class="nav-links">
-                    
+                    <ul class="flex">
+                        <li><a href="#">IN EVIDENZA</a></li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVE USCITE</a></li>
+                        <li><a href="#">SCOPRI</a></li>
+
+                    </ul>
                 </div>
-                <div class="album-container">
+                <div class="album-container flex">
                     <h1>Recently played</h1>
-                    <div class="album-card-container">
+                    <div class="album-card-container flex">
                         <div class="card-album"></div>
                         <div class="card-album"></div>
                         <div class="card-album"></div>
@@ -83,8 +91,20 @@
                 </div>
             </div>
         </div>
-        <div class="nav-bot-container">
-            <div class="nav-bot-left"></div>
+        <div class="nav-bot-container flex">
+            <div class="nav-bot-left flex">
+                <div>
+                    <img src="img/sinister.jpeg" alt="Sinister-song">
+                </div>
+                <div class="nav-bot-song-description">
+                    <div class="nav-bot-song-title">Sinister</div>
+                    <div class="nav-bot-song-subtitle">Brano nome</div>
+                </div>
+                <div>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+            </div>
             <div class="nav-bot-center"></div>
             <div class="nav-bot-right"></div>
         </div>

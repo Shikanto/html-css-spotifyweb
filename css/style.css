@@ -9,9 +9,12 @@ body{
 }
 
 .shell{
-    display: flex;
     width: 100%;
     height: calc(100vh - 80px);
+}
+
+.flex{
+    display: flex;
 }
 
 /****** INIZIO SIDEBAR  ******/
@@ -21,13 +24,11 @@ body{
     width: 40px;
     flex-shrink: 0;
     height: 100%;
-    display: flex;
     flex-direction: column;
 }
 
 .icon-container{
     flex-shrink: 0;
-    display: flex;
     flex-direction: column;
 }
 
@@ -38,7 +39,6 @@ body{
 
 .user-container{
     flex-shrink: 0;
-    display: flex;
     flex-direction: column;
     text-align: center;
     
@@ -69,7 +69,6 @@ body{
 .main-section-container{
     flex-grow: 1;
     height: 100%;
-    display: flex;
     flex-direction: column;
 }
 
@@ -90,25 +89,57 @@ body{
 }
 
 .nav-links{
-    height: 50px;
-    background-color: grey;
-    flex-shrink: 0;
+    background-color: #141922;
+    flex-shrink: 0;  
+}
+
+.nav-links ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.nav-links li{
+    padding: 10px 6px;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-links ul li a{
+    color: #878787;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.nav-links ul li:first-child a::after{
+    content: "";
+    height: 1px;
+    width: 40px;
+    background-color: #ADFF2F;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
 }
 
 .album-container{
     flex-grow: 1;
-    background-color: aquamarine;
-    display: flex;
     flex-direction: column;
     overflow: auto;
+    background-color: #141922;
+}
 
+.album-container h1{
+    color: white;
 }
 
 .album-card-container{
-    display: flex;
     flex-wrap: wrap;
     gap: 4px;
-    background-color: lightgray;
     flex-grow: 1;
     
 }
@@ -119,19 +150,42 @@ body{
     background-color: red;
 }
 
+/*************  FINE MAIN SECTION ****************/
+
+
+/*************  INIZIO BOTTOM-NAV SECTION ****************/
+
 .nav-bot-container{
     width: 100%;
     height: 80px;
-    display: flex;
-    justify-content: space-between;
+    background-color: #282828;
+    color:#878787;
 }
-
-/*************  FINE MAIN SECTION ****************/
 
 .nav-bot-left{
     flex-grow: 1;
-    max-width: 400px;
-    background-color: rgb(139, 0, 93);
+    align-items: center;
+}
+
+.nav-bot-left > div{
+    flex-grow: 1;
+}
+
+/* .nav-bot-song-description{
+    padding: 0 10px;
+} */
+
+.nav-bot-left div:first-child img{
+    max-width: 40px;
+}
+
+.nav-bot-song-title{
+    color: white;
+    font-weight: bold;
+}
+
+.nav-bot-song-subtitle{
+    font-size: 12px;
 }
 
 .nav-bot-center{
@@ -145,6 +199,8 @@ body{
     background-color: salmon;
 
 }
+
+/*************  FINE BOTTOM-NAV SECTION ****************/
 
 
 /******** MEDIA QUERIES **************** */
