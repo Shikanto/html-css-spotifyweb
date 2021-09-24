@@ -30,6 +30,7 @@ body{
 .icon-container{
     flex-shrink: 0;
     flex-direction: column;
+    /* position: relative; */
 }
 
 .playlist-container{
@@ -116,12 +117,12 @@ body{
 
 .nav-links ul li:first-child a::after{
     content: "";
-    height: 1px;
-    width: 40px;
+    height: 2px;
+    width: 30px;
     background-color: #ADFF2F;
     position: absolute;
     display: inline-block;
-    bottom: 0;
+    bottom: -3px;
     left: 50%;
     transform: translate(-50%,-50%);
     
@@ -291,6 +292,19 @@ h5{
         width: 200px;
     }
 
+    .home{
+        border-left: 2px solid #ADFF2F;
+    }
+
+    /* .home::before{
+        content: "";
+        position: absolute;  
+        height: 4px;
+        width: 30px;
+        color:#ADFF2F;
+        transform: rotate(90deg);
+    } */
+
     .playlist-container {
         display:flex;
         flex-direction: column;
@@ -307,6 +321,7 @@ h5{
 
     .icon-text{
         padding-left: 0;
+        position: relative;
     }
 
     .flex-icon{
@@ -405,7 +420,6 @@ h5{
 @media screen and (min-width:719px) {
     
     .card-album{
-        height: 200px;
         width: calc(100% / 4 - 4px);
     }
 
@@ -417,11 +431,6 @@ h5{
         padding: 10px;
     }
 
-    .nav-links ul li:first-child a::after{
-        height: 2px;
-        bottom: -5px;
-        width: 30px;
-    }
     .icon-player-container{
         justify-content: center;
     }
@@ -443,15 +452,18 @@ h5{
 @media screen and (min-width:959px) {
     
     .card-album{
-        height: 200px;
         width: calc(100% / 6 - 10px);
     }
 
-    #play-btn{
+    h2{
+        font-size: 30px;
+    }
+
+    #play-btn {
         font-size: 40px;
     }
  
-    .icon-player-container i{
+    .icon-player-container i,.card-album h4{
         font-size: 20px;
     }
 
@@ -459,24 +471,16 @@ h5{
         padding: 15px 0;
     }
 
-    .nav-links ul li{
-        font-size: 18px;
-    }
-
     .nav-bot-left, .nav-bot-right{
         min-width: 300px;
     }
 
-    .nav-bot-right i,  .nav-bot-song-title, .nav-bot-left-icon{
+    .icon-text, .sidebar, .nav-bot-right i,  .nav-bot-song-title, .nav-bot-left-icon, .nav-links ul li{
         font-size: 18px;
     }
 
-    .nav-bot-song-subtitle{
+    .nav-bot-song-subtitle, .icon-download-text{
         font-size: 16px;
-    }
-
-    .sidebar{
-        font-size: 18px;
     }
 
     .album-card-container{
@@ -487,16 +491,8 @@ h5{
         max-width: 40px;
     }
 
-    .icon-text{
-        font-size: 16px;
-    }
-
     .sidebar{
         width: 250px;
-    }
-        
-    .icon-download-text{
-        font-size: 16px;
     }
 
     .icon-download{
