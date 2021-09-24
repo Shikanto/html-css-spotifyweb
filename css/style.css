@@ -17,6 +17,22 @@ body{
     display: flex;
 }
 
+.nav-links ul li a:hover, .icon-text span:hover, .playlist-list ul li:hover, .new-playlist-container:hover, .new-playlist-container a:hover, .nav-bot-song-subtitle:hover, .nav-bot-left-icon i:hover{
+    color: white;
+}
+
+.nav-bot-song-subtitle:hover{
+    text-decoration: underline;
+}
+
+.upgrade-container a:hover{
+    font-size: 20px;
+}
+
+#play-btn:hover{
+    font-size: 45px;
+}
+
 /****** INIZIO SIDEBAR  ******/
 
 .sidebar{
@@ -108,7 +124,7 @@ body{
     font-weight: bold;
 }
 
-.nav-links ul li a{
+.nav-links ul li a, .new-playlist-container a{
     color: #878787;
     text-decoration: none;
     position: relative;
@@ -237,6 +253,7 @@ h5{
 .icon-player-container{
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .song-bar-container{
