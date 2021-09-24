@@ -121,7 +121,6 @@ body{
     width: 30px;
     background-color: #ADFF2F;
     position: absolute;
-    display: inline-block;
     bottom: -3px;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -290,6 +289,7 @@ h5{
     .sidebar {
         padding:20px;
         width: 200px;
+        font-size: 12px;
     }
 
     .home{
@@ -423,10 +423,6 @@ h5{
         width: calc(100% / 4 - 4px);
     }
 
-    .sidebar{
-        font-size: 12px;
-    }
-
     .nav-links ul li{
         padding: 10px;
     }
@@ -475,11 +471,11 @@ h5{
         min-width: 300px;
     }
 
-    .icon-text, .sidebar, .nav-bot-right i,  .nav-bot-song-title, .nav-bot-left-icon, .nav-links ul li{
+    .icon-text, .nav-bot-right i,  .nav-bot-song-title, .nav-bot-left-icon{
         font-size: 18px;
     }
 
-    .nav-bot-song-subtitle, .icon-download-text{
+    .nav-bot-song-subtitle, .icon-download-text, .nav-links ul li{
         font-size: 16px;
     }
 
