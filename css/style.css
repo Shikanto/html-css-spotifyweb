@@ -10,14 +10,14 @@ body{
 
 .shell{
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
 }
 
 .flex{
     display: flex;
 }
 
-.nav-links ul li a:hover, .icon-text span:hover, .playlist-list ul li:hover, .new-playlist-container:hover, .new-playlist-container a:hover, .nav-bot-song-subtitle:hover, .nav-bot-left-icon i:hover{
+.white-hover:hover{
     color: white;
 }
 
@@ -26,12 +26,55 @@ body{
 }
 
 .upgrade-container a:hover{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #play-btn:hover{
-    font-size: 45px;
+    font-size:2.5em;
 }
+
+.song-bar-progress:hover{
+    background-color: #ADFF2F;
+}
+
+.song-bar-progress:hover .song-dot{
+    opacity: 1;
+}
+
+.overlay{
+    position: relative;
+    display: block;
+    margin: auto;    
+}
+
+.overlay:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+
+}
+
+.card-album:hover .overlay:after, .card-album:hover .overlay i{
+    opacity: 1;
+}
+
+.overlay i{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    opacity: 0;
+    font-weight: bold;
+    z-index: 3;
+    color: white;
+}
+
 
 /****** INIZIO SIDEBAR  ******/
 
@@ -139,7 +182,7 @@ body{
     position: absolute;
     bottom: -3px;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50% -50%);
     
 }
 
@@ -179,6 +222,7 @@ h5{
 .card-album{
     width: calc(100% / 2 - 4px);
     text-align: center;
+    position: relative;
 }
 
 .card-album-img, .card-artist-img{
@@ -200,7 +244,7 @@ h5{
 
 .nav-bot-container{
     width: 100%;
-    height: 80px;
+    height: 90px;
     background-color: #282828;
     color:#878787;
     z-index: 92;
@@ -211,7 +255,6 @@ h5{
     flex-grow: 2;
     align-items: center;
     max-width: 150px;
-    padding-left: 4px;
 }
 
 .nav-bot-right i{
@@ -219,6 +262,14 @@ h5{
     font-size: 12px;
 }
 
+#play-btn{
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    padding:0;
+}
 
 .nav-bot-song-description{
     padding: 0 10px;
@@ -242,29 +293,27 @@ h5{
     flex-grow: 4;
     color: white;
     flex-direction: column;
-    padding: 10px;
     max-width: 200px;
+    padding-top: 10px;
 }
 
 .nav-bot-right{   
     color: white;
+    padding-left: 20px;
 }
 
 .icon-player-container{
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
 }
+
 
 .song-bar-container{
     align-items: center;
     justify-content: center;
     flex-grow: 1;
     font-size: 10px;
-}
-
-#play-btn{
-    font-size: 30px;
+    padding-bottom: 20px;
 }
 
 .song-bar{
@@ -272,7 +321,6 @@ h5{
     height: 4px;
     width: 80%;
     border-radius: 2px;
-    overflow: hidden;
     margin: 0 8px;
 }
 
@@ -280,8 +328,21 @@ h5{
     background-color: #c1c1c1;
     width: 40%;
     position: relative;
+    border-radius: 2px;
    
 }
+
+.song-dot{
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border-radius: 50%;
+    right: 0;
+    top: -4px;
+    opacity: 0;
+}
+
 /*************  FINE BOTTOM-NAV SECTION ****************/
 
 
@@ -312,15 +373,6 @@ h5{
     .home{
         border-left: 2px solid #ADFF2F;
     }
-
-    /* .home::before{
-        content: "";
-        position: absolute;  
-        height: 4px;
-        width: 30px;
-        color:#ADFF2F;
-        transform: rotate(90deg);
-    } */
 
     .playlist-container {
         display:flex;
@@ -431,6 +483,7 @@ h5{
         padding-left: 10px;
     }
 
+
 /*************  FINE NAV-BOT SECTION ****************/
 }
 
@@ -456,10 +509,8 @@ h5{
         display: inline-block;
     }
 
-    .nav-bot-center{
-        padding: 10px 30px;
-    }
-}
+    
+} 
 
 
 @media screen and (min-width:959px) {
@@ -471,12 +522,8 @@ h5{
     h2{
         font-size: 30px;
     }
-
-    #play-btn {
-        font-size: 40px;
-    }
  
-    .icon-player-container i,.card-album h4{
+    .card-album h4{
         font-size: 20px;
     }
 
@@ -488,11 +535,7 @@ h5{
         min-width: 300px;
     }
 
-    .icon-text, .nav-bot-right i,  .nav-bot-song-title, .nav-bot-left-icon{
-        font-size: 18px;
-    }
-
-    .nav-bot-song-subtitle, .icon-download-text, .nav-links ul li{
+    .nav-links ul li{
         font-size: 16px;
     }
 
