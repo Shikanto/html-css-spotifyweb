@@ -263,11 +263,8 @@ h5{
 
 #play-btn{
     font-size: 30px;
-    height: 40px;
-    width: 40px;
     text-align: center;
     line-height: 40px;
-    padding:0;
     transition: 0.3s;
 }
 
